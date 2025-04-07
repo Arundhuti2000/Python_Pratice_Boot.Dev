@@ -1,0 +1,198 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Comprehensive Architectural Overview</title>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <style>
+            :root {
+                --primary-color: #3498db;
+                --secondary-color: #2ecc71;
+                --background-light: #f4f6f7;
+                --text-dark: #2c3e50;
+                --card-bg: #ffffff;
+                --border-radius: 12px;
+            }
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                font-family: 'Inter', sans-serif;
+                line-height: 1.6;
+                background-color: var(--background-light);
+                color: var(--text-dark);
+            }
+            .page {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+            .header {
+                text-align: center;
+                padding: 30px 0;
+                background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+                color: white;
+                border-radius: var(--border-radius);
+                margin-bottom: 30px;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            }
+            .header h1 {
+                font-weight: 600;
+                letter-spacing: -1px;
+                font-size: 2.5em;
+            }
+            .card {
+                background: var(--card-bg);
+                border-radius: var(--border-radius);
+                box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+                padding: 25px;
+                margin-bottom: 25px;
+                transition: all 0.3s ease;
+            }
+            .card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            }
+            .card h2 {
+                border-bottom: 3px solid var(--primary-color);
+                padding-bottom: 10px;
+                margin-bottom: 15px;
+                color: var(--primary-color);
+            }
+            .section-content {
+                background-color: #f8f9fa;
+                border-left: 4px solid var(--primary-color);
+                padding: 15px;
+                border-radius: 5px;
+            }
+            .section-content pre {
+                white-space: pre-wrap;
+                word-wrap: break-word;
+                font-family: 'Inter', monospace;
+            }
+            .file-composition {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                justify-content: center;
+                margin-top: 15px;
+            }
+            .file-type-tag {
+                background-color: var(--primary-color);
+                color: white;
+                padding: 5px 10px;
+                border-radius: 20px;
+                font-size: 0.9em;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+            }
+            #file_type_chart {
+                width: 100%;
+                height: 400px;
+            }
+            @media (max-width: 768px) {
+                .page {
+                    padding: 10px;
+                }
+                .header h1 {
+                    font-size: 1.8em;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="page">
+            <div class="header">
+                <h1>🔍 Comprehensive Architectural Overview</h1>
+            </div>
+
+            <div class="card">
+                <h2>📊 Project File Composition</h2>
+                <div class="file-composition">
+                    <span class="file-type-tag"><strong>documentation</strong>: 1 (25.0%)</span><span class="file-type-tag"><strong>python</strong>: 2 (50.0%)</span><span class="file-type-tag"><strong>web</strong>: 1 (25.0%)</span>
+                </div>
+                <div id="file_type_chart"></div>
+            </div>
+
+            
+            <div class="card">
+                <h2>🏗️ Project Architecture</h2>
+                <div class="section-content">
+                    <pre>The project's overall architectural pattern is based on a simple, straightforward approach, with a few key components. The main system components are:
+* Main: This component contains the main logic of the program, which includes the vanity_sort() function. It also imports the Influencer class from the influencers module and calls it to create three influencer objects.
+* Influencers: This module defines a single class called Influencer that represents an influencer on social media. The class has two attributes, num_selfies and num_bio_links, which keep track of the number of selfies and biography links respectively.
+* Tests: This module contains test cases for the program's functionality, including test cases for the vanity_sort() function. It also imports the main component from the main module.</pre>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h2>📋 Project Overview</h2>
+                <div class="section-content">
+                    <pre>The project's primary purpose is to sort a list of influencers based on their vanity score. The main objectives are to provide an easy-to-use and efficient way to calculate and sort the vanity score for each influencer, as well as to demonstrate understanding of class objects and testing concepts in Python.</pre>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h2>💻 Tech Stack</h2>
+                <div class="section-content">
+                    <pre>The primary technologies used in this project are Python (specifically version 3.9) and the unittest library for writing tests. The choice of these technologies was based on their simplicity, flexibility, and ease of use, as well as their ability to meet the project's requirements.</pre>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h2>🧩 Key Features in Components</h2>
+                <div class="section-content">
+                    <pre>The main component of the project contains the logic for calculating the vanity score of each influencer and sorting them by that score. The Influencers module defines a class representing an influencer, which has two attributes to keep track of their selfies and biography links. The Tests module contains test cases for verifying the functionality of the vanity_sort() function.</pre>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h2>🔀 Implementation Flow</h2>
+                <div class="section-content">
+                    <pre>The high-level workflow for this project involves the following steps:
+* Create three influencer objects with different properties (num_selfies, num_bio_links).
+* Calculate the vanity score for each influencer object.
+* Sort the list of influencer objects based on their vanity scores using the built-in sorted() function.</pre>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h2>🚀 Future Improvements</h2>
+                <div class="section-content">
+                    <pre>To optimize or scale this project in the future, some potential enhancements could include adding more features to the Influencers class (e.g., additional attributes for tracking followers, engagement metrics, etc.), creating a user interface to allow users to input and sort influencer data interactively, or implementing a more sophisticated sorting algorithm to take into account other factors that affect an influencer's vanity score (e.g., number of posts with images).</pre>
+                </div>
+            </div>
+            
+        </div>
+
+        <script type="text/javascript">
+            google.charts.load('current', {'packages':['corechart']});
+            google.charts.setOnLoadCallback(drawChart);
+
+            function drawChart() {
+                var data = google.visualization.arrayToDataTable([
+                    ['File Type', 'Count'],
+                    ['documentation', 1], ['python', 2], ['web', 1]
+                ]);
+
+                var options = {
+                    title: 'Project File Type Distribution',
+                    backgroundColor: 'transparent',
+                    chartArea: {width: '80%', height: '70%'},
+                    legend: {position: 'right'},
+                    colors: ['#3498db', '#2ecc71', '#e74c3c', '#f39c12', '#9b59b6']
+                };
+
+                var chart = new google.visualization.PieChart(document.getElementById('file_type_chart'));
+                chart.draw(data, options);
+            }
+        </script>
+    </body>
+    </html>
+    
