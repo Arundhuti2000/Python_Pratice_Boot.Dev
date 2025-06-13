@@ -18,9 +18,9 @@ class Solution:
             
         #Slide the window
         for i in range(len(p), len(s)):
-            #Add character to the window
+            #Add character from right
             initial_count[char_to_index(s[i])] += 1
-            #Remove character from the window
+            #Remove character from left
             initial_count[char_to_index(s[i - len(p)])] -= 1
             if pattern_count == initial_count:
                 result.append(i - len(p) + 1)
